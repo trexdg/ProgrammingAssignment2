@@ -25,6 +25,6 @@ cacheSolve <- function(mtx, ...) {
   }
   data <- mtx$get()
   inverse <- solve(data, ...)
-  mtx$setinverse(inverse)
+  mtx$setinv(inverse)
   return(inverse)
 }
